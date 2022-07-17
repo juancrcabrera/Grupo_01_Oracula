@@ -5,6 +5,7 @@ const path = require('path');
 upload = require('../middleWares/multerUsers');
 
 const { body } = require('express-validator');
+const { Router } = require('express');
 
 
 const validations = [
@@ -52,5 +53,7 @@ routes.get("/:id/edit", userController.edit);
 routes.put("/:id/edit", upload.single('profilePicture'), userController.update);
 //borrado
 routes.delete("/:id/delete", userController.delete);
+//perfil de usuario
+routes.get("/perfil",userController.perfil)
 
 module.exports = routes;

@@ -15,6 +15,11 @@ const usersController = {
         res.render('./users/signup', { titulo: "Crear cuenta" });
     },
 
+    //perfil.html
+    perfil: (req, res) => {
+        res.render('./users/perfil', { titulo: "Perfil de Usuario" });
+    },
+
     //Guardar usuario nuevo
     store: (req, res) => {
         const validationsResult =  validationResult(req);
