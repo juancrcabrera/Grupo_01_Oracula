@@ -66,7 +66,14 @@ const usersController = {
         res.render("./users/signup", { titulo: "Crear cuenta" });
     },
 
+ feature/profile
     
+
+    //perfil.html
+    perfil: (req, res) => {
+        res.render('./users/perfil', { titulo: "Perfil de Usuario" });
+    },
+develop
 
     //Guardar usuario nuevo
     store: (req, res) => {
