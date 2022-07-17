@@ -72,7 +72,6 @@ const productsController = {
             esNovedad = req.body.esNovedad?true:false;
             esOferta = req.body.esOferta?true:false;
             
-            
             //Array de Objetos Género
             let generos = [];
             if (req.body.esGeneroMedieval) {
